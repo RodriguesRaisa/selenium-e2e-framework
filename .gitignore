@@ -1,0 +1,81 @@
+allure-results/
+screenshots/
+screenshot/
+test-output
+build/
+
+application.log
+# Java class files and VM crash logs
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+.mvn
+
+# Gradle
+.gradle/
+/build/
+bin/
+out/
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar    # keep the wrapper jar for consistent builds
+
+# Eclipse
+.classpath
+.project
+.settings/
+# External tool builders
+.externalToolBuilders/
+# Locally stored Eclipse launch configurations
+*.launch
+# Eclipse workspace metadata
+.metadata
+# Annotation processing artefacts
+.factorypath
+
+# IntelliJ IDEA
+.idea/
+# Out folder
+out/
+# Project workspace file (desktop only)
+*.iws
+# Project personal workspace file (desktop only)
+*.accessors
+
+# VS Code
+.vscode/
+
+# Selenium and Test Automation Specific
+# Log files generated during test runs
+*.log
+# Directory where test reports/outputs are generated
+test-output/
+# Reports from Surefire or Failsafe plugins
+surefire-reports/
+failsafe-reports/
+# Selenium specific log files if created (e.g., chromedriver.log)
+chromedriver.log
+geckodriver.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Environment variables file (if used for secrets)
+# Consider using environment variables directly or a secret management tool
+.env
