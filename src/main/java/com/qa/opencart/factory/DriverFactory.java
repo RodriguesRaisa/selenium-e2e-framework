@@ -49,6 +49,7 @@ public class DriverFactory {
 		
 		switch (browserName.toLowerCase().trim()) {
 		case "chrome":
+			
 			tlDriver.set(new ChromeDriver(optionsMgr.getChromeOptions()));
 			//driver = new ChromeDriver(optionsMgr.getChromeOptions());
 			break;

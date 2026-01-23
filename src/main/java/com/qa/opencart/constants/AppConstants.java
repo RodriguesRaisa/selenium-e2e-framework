@@ -4,7 +4,7 @@ public class AppConstants {
 	
 	//final variables should be in uppercase with _
 	//making it static and public because i dont want others to create object of this class AppConstants to access variables
-	public static final String LOGIN_PAGE_TITLE = "Account Login11";	
+	public static final String LOGIN_PAGE_TITLE = "Account Login";	
 	public static final String HOME_PAGE_TITLE = "My Account";
 	public static final String LOGIN_PAGE_URL = "route=account/login";
 	public static final String HOMEPAGE_PAGE_URL = "route=account/account";
