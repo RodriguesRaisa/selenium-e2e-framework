@@ -44,7 +44,7 @@ public class LoginPage {
 		//String title = driver.getTitle();
 		String title = eleUtil.waitForTitleIs(LOGIN_PAGE_TITLE,DEFAULT_TIMEOUT);
 		//System.out.println("login page title: "+title);
-		log.info("login page title: "+title);
+		log.info("login page title is : "+title);
 		return title;	
 	}
 	
