@@ -30,11 +30,16 @@ public class ExcelUtil {
 			workbook = WorkbookFactory.create(ip); //This will create the copy of the entire stream in the memory. It will load the data from excel file
 			sheet = workbook.getSheet(sheetName);
 			
+//	        int rowCount = sheet.getPhysicalNumberOfRows();
+//	        int colCount = sheet.getRow(0).getPhysicalNumberOfCells();
+			
 			//This method should return 2D object array and it will given to dataprovider
 			//Dataprovider always return 2D object array
 			//create blank object array
 			data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];//getLastCellNum will give column count
 		
+			//Object[][] data = new Object[rowCount - 1][colCount]; // exclude header row
+			
 			//to go to each row and column
 			for(int i=0;i<sheet.getLastRowNum();i++)
 			{
@@ -45,8 +50,15 @@ public class ExcelUtil {
 					
 				}
 			}
-			
-			
+		
+//			for (int i = 1; i < rowCount; i++) { // start from 1 to skip header
+//	            Row row = sheet.getRow(i);
+//	            for (int j = 0; j < colCount; j++) {
+//	                Cell cell = row.getCell(j);
+//	                data[i - 1][j] = cell != null ? cell.toString() : "";
+//	            }
+//	        }
+//			
 		} catch (IOException | InvalidFormatException e) {
 			
 			e.printStackTrace();

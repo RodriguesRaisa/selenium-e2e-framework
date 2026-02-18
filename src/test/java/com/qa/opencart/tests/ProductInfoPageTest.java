@@ -112,7 +112,7 @@ public class ProductInfoPageTest extends BaseTest{
 //		softAssert.assertEquals(actualProductDetailsMap.get("productextaxprice"),"2000");
 //		softAssert.assertAll();
 //		
-//		//SoftAssert will not terminate the code if any of the assertion fails and it will kep on executing
+//		//SoftAssert will not terminate the code if any of the assertion fails and it will keep on executing
 //		//It is used when we have multiple assertions
 //		//assert all will tell you how many assertions got failed
 //		//whereas HardAssertion will terminate the program when to use --> single functionality with single assertion

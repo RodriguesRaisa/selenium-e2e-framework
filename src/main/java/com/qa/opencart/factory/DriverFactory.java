@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -14,7 +13,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import com.aventstack.chaintest.plugins.ChainTestListener;
 import com.qa.opencart.exception.BrowserException;
 import com.qa.opencart.exception.FrameworkException;
 
@@ -93,11 +91,13 @@ public class DriverFactory {
 	//mvn clean install -Denv="qa"
 	public Properties initProp()
 	{
+		prop = new Properties();
+		FileInputStream ip = null;
+		
 		String envName = System.getProperty("env");
 		//System.out.println("Running tests on env: "+envName);
 		log.info("Running tests on env: "+envName);
-		prop = new Properties();
-		FileInputStream ip = null;
+		
 		try {
 			
 		if(envName == null)
